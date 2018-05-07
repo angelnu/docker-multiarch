@@ -15,7 +15,7 @@ env:
     SOURCE_amd64="gcr.io/google_containers/kube-proxy-amd64:v1.10.2"
     SOURCE_arm64="gcr.io/google_containers/kube-proxy-arm64:v1.10.2"
     SOURCE_arm="gcr.io/google_containers/kube-proxy-arm:v1.10.2"
-  - TARGET="angelnu/kube-proxy:v1.10.2"
+  - TARGET="angelnu/nextcloudplus:v1.10.2"
     ARCHS="arm amd64"
     SOURCE_amd64="ownyourbits/nextcloudplus-x86:latest"
     SOURCE_arm="ownyourbits/nextcloudplus-armhf:latest"
