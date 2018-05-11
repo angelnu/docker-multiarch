@@ -27,14 +27,14 @@ env:
     SOURCE_amd64="linuxserver/sickrage:latest"
     SOURCE_arm64="lsioarmhf/sickrage-aarch64:latest"
     SOURCE_arm="lsioarmhf/sickrage:latest"
-  - TARGET="angelnu/maraschino:latest"
-    SOURCE_amd64="linuxserver/maraschino:latest"
-    SOURCE_arm64="lsioarmhf/maraschino-aarch64:latest"
-    SOURCE_arm="lsioarmhf/maraschino:latest"
   - TARGET="angelnu/heimdall:latest"
     SOURCE_amd64="linuxserver/heimdall:latest"
     SOURCE_arm64="lsioarmhf/heimdall-aarch64:latest"
     SOURCE_arm="lsioarmhf/heimdall:latest"
+  - TARGET="angelnu/couchpotato:latest"
+    SOURCE_amd64="linuxserver/couchpotato:latest"
+    SOURCE_arm64="lsioarmhf/couchpotato-aarch64:latest"
+    SOURCE_arm="lsioarmhf/couchpotato:latest"
 
 
 script:
