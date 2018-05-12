@@ -7,6 +7,10 @@ language: bash
 
 env:
   matrix:
+  - TARGET="angelnu/openvpn-client:latest"
+    SOURCE_amd64="dperson/openvpn-client:latest"
+    SOURCE_arm64="dperson/openvpn-client:aarch64"
+    SOURCE_arm="dperson/openvpn-client:armhf"
   - TARGET="angelnu/etcd:3.1.12"
     SOURCE_amd64="gcr.io/google_containers/etcd-amd64:3.1.12"
     SOURCE_arm64="gcr.io/google_containers/etcd-arm64:3.1.12"
