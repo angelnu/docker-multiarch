@@ -7,6 +7,10 @@ language: bash
 
 env:
   matrix:
+  - TARGET="angelnu/heapster-influxdb:v1.3.3"
+    SOURCE_amd64="k8s.gcr.io/heapster-influxdb-amd64:v1.3.3"
+    SOURCE_arm64="k8s.gcr.io/heapster-influxdb-arm64:v1.3.3"
+    SOURCE_arm="k8s.gcr.io/heapster-influxdb-arm:v1.3.3"
   - TARGET="angelnu/openvpn-client:latest"
     SOURCE_amd64="dperson/openvpn-client:latest"
     SOURCE_arm64="dperson/openvpn-client:aarch64"
