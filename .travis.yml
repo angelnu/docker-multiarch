@@ -7,6 +7,14 @@ language: bash
 
 env:
   matrix:
+  - TARGET="angelnu/heapster-grafana:v4.4.3"
+    SOURCE_amd64="k8s.gcr.io/heapster-grafana-amd64:v4.4.3"
+    SOURCE_arm64="k8s.gcr.io/heapster-grafana-arm64:v4.4.3"
+    SOURCE_arm="k8s.gcr.io/heapster-grafana-arm:v4.4.3"
+  - TARGET="angelnu/heapster:v1.4.2"
+    SOURCE_amd64="k8s.gcr.io/heapster-amd64:v1.4.2"
+    SOURCE_arm64="k8s.gcr.io/heapster-arm64:v1.4.2"
+    SOURCE_arm="k8s.gcr.io/heapster-arm:v1.4.2"
   - TARGET="angelnu/heapster-influxdb:v1.3.3"
     SOURCE_amd64="k8s.gcr.io/heapster-influxdb-amd64:v1.3.3"
     SOURCE_arm64="k8s.gcr.io/heapster-influxdb-arm64:v1.3.3"
