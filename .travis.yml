@@ -7,46 +7,62 @@ language: bash
 
 env:
   matrix:
+
+  - TARGET="angelnu/Jackett:latest"
+    SOURCE_amd64="linuxserver/Jackett:latest"
+    SOURCE_arm64="lsioarmhf/Jackett-aarch64:latest"
+    SOURCE_arm="lsioarmhf/Jackett:latest"
+
   - TARGET="angelnu/heapster-grafana:v4.4.3"
     SOURCE_amd64="k8s.gcr.io/heapster-grafana-amd64:v4.4.3"
     SOURCE_arm64="k8s.gcr.io/heapster-grafana-arm64:v4.4.3"
     SOURCE_arm="k8s.gcr.io/heapster-grafana-arm:v4.4.3"
+
   - TARGET="angelnu/heapster:v1.4.2"
     SOURCE_amd64="k8s.gcr.io/heapster-amd64:v1.4.2"
     SOURCE_arm64="k8s.gcr.io/heapster-arm64:v1.4.2"
     SOURCE_arm="k8s.gcr.io/heapster-arm:v1.4.2"
+
   - TARGET="angelnu/heapster-influxdb:v1.3.3"
     SOURCE_amd64="k8s.gcr.io/heapster-influxdb-amd64:v1.3.3"
     SOURCE_arm64="k8s.gcr.io/heapster-influxdb-arm64:v1.3.3"
     SOURCE_arm="k8s.gcr.io/heapster-influxdb-arm:v1.3.3"
+
   - TARGET="angelnu/openvpn-client:latest"
     SOURCE_amd64="dperson/openvpn-client:latest"
     SOURCE_arm64="dperson/openvpn-client:aarch64"
     SOURCE_arm="dperson/openvpn-client:armhf"
+
   - TARGET="angelnu/etcd:3.1.12"
     SOURCE_amd64="gcr.io/google_containers/etcd-amd64:3.1.12"
     SOURCE_arm64="gcr.io/google_containers/etcd-arm64:3.1.12"
     SOURCE_arm="gcr.io/google_containers/etcd-arm:3.1.12"
+
   - TARGET="angelnu/kube-proxy:v1.10.2"
     SOURCE_amd64="gcr.io/google_containers/kube-proxy-amd64:v1.10.2"
     SOURCE_arm64="gcr.io/google_containers/kube-proxy-arm64:v1.10.2"
     SOURCE_arm="gcr.io/google_containers/kube-proxy-arm:v1.10.2"
+
   - TARGET="angelnu/nextcloudplus:latest"
     ARCHS="arm amd64"
     SOURCE_amd64="ownyourbits/nextcloudplus-x86:latest"
     SOURCE_arm="ownyourbits/nextcloudplus-armhf:latest"
+
   - TARGET="angelnu/transmission:latest"
     SOURCE_amd64="linuxserver/transmission:latest"
     SOURCE_arm64="lsioarmhf/transmission-aarch64:latest"
     SOURCE_arm="lsioarmhf/transmission:latest"
+
   - TARGET="angelnu/sickrage:latest"
     SOURCE_amd64="linuxserver/sickrage:latest"
     SOURCE_arm64="lsioarmhf/sickrage-aarch64:latest"
     SOURCE_arm="lsioarmhf/sickrage:latest"
+
   - TARGET="angelnu/heimdall:latest"
     SOURCE_amd64="linuxserver/heimdall:latest"
     SOURCE_arm64="lsioarmhf/heimdall-aarch64:latest"
     SOURCE_arm="lsioarmhf/heimdall:latest"
+
   - TARGET="angelnu/couchpotato:latest"
     SOURCE_amd64="linuxserver/couchpotato:latest"
     SOURCE_arm64="lsioarmhf/couchpotato-aarch64:latest"
