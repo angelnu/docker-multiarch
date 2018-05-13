@@ -8,10 +8,10 @@ language: bash
 env:
   matrix:
 
-  - TARGET="angelnu/Jackett:latest"
-    SOURCE_amd64="linuxserver/Jackett:latest"
-    SOURCE_arm64="lsioarmhf/Jackett-aarch64:latest"
-    SOURCE_arm="lsioarmhf/Jackett:latest"
+  - TARGET="angelnu/jackett:latest"
+    SOURCE_amd64="linuxserver/jackett:latest"
+    SOURCE_arm64="lsioarmhf/jackett-aarch64:latest"
+    SOURCE_arm="lsioarmhf/jackett:latest"
 
   - TARGET="angelnu/heapster-grafana:v4.4.3"
     SOURCE_amd64="k8s.gcr.io/heapster-grafana-amd64:v4.4.3"
