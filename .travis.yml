@@ -9,9 +9,9 @@ env:
   matrix:
 
   - TARGET="angelnu/pause:latest"
-    SOURCE_amd64="k8s.gcr.io/pause-amd64:latest"
-    SOURCE_arm64="k8s.gcr.io/pause-arm64:latest"
-    SOURCE_arm="k8s.gcr.io/pause-arm:latest"
+    SOURCE_amd64="k8s.gcr.io/pause-amd64:3.1"
+    SOURCE_arm64="k8s.gcr.io/pause-arm64:3.1"
+    SOURCE_arm="k8s.gcr.io/pause-arm:3.1"
 
   - TARGET="angelnu/jackett:latest"
     SOURCE_amd64="linuxserver/jackett:latest"
