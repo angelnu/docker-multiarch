@@ -8,6 +8,11 @@ language: bash
 env:
   matrix:
 
+  - TARGET="angelnu/metrics-server:v0.2.1"
+    SOURCE_amd64="gcr.io/google_containers/metrics-server-amd64:v0.2.1"
+    SOURCE_arm64="gcr.io/google_containers/metrics-server-arm64:v0.2.1"
+    SOURCE_arm="gcr.io/google_containers/metrics-server-arm:v0.2.1"
+
   - TARGET="angelnu/nfs-client-provisioner:latest"
     ARCHS="arm amd64"
     SOURCE_amd64="quay.io/external_storage/nfs-client-provisioner:latest"
