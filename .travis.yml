@@ -65,8 +65,8 @@ env:
 
   - TARGET="angelnu/nextcloudplus:latest"
     ARCHS="arm amd64"
-    SOURCE_amd64="ownyourbits/nextcloudplus-x86:latest"
-    SOURCE_arm="ownyourbits/nextcloudplus-armhf:latest"
+    SOURCE_amd64="ownyourbits/nextcloudpi-x86:latest"
+    SOURCE_arm="ownyourbits/nextcloudpi-armhf:latest"
 
   - TARGET="angelnu/transmission:latest"
     SOURCE_amd64="linuxserver/transmission:latest"
