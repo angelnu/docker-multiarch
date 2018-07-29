@@ -58,7 +58,7 @@ env:
     SOURCE_arm64="gcr.io/google_containers/etcd-arm64:3.1.17"
     SOURCE_arm="gcr.io/google_containers/etcd-arm:3.1.17"
 
-  - TARGET="angelnu/kube-proxy:v1.11.2"
+  - TARGET="angelnu/kube-proxy:v1.11.1"
     SOURCE_amd64="gcr.io/google_containers/kube-proxy-amd64:v1.11.1"
     SOURCE_arm64="gcr.io/google_containers/kube-proxy-arm64:v1.11.1"
     SOURCE_arm="gcr.io/google_containers/kube-proxy-arm:v1.11.1"
