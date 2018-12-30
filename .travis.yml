@@ -18,7 +18,7 @@ env:
     SOURCE_amd64="quay.io/external_storage/nfs-client-provisioner:latest"
     SOURCE_arm="quay.io/external_storage/nfs-client-provisioner-arm:latest"
 
-  - TARGET="angelnu/kubernetes-dashboard:v1.8.3"
+  - TARGET="angelnu/kubernetes-dashboard:v1.10.0"
     SOURCE_amd64="k8s.gcr.io/kubernetes-dashboard-amd64:v1.8.3"
     SOURCE_arm64="k8s.gcr.io/kubernetes-dashboard-arm64:v1.8.3"
     SOURCE_arm="k8s.gcr.io/kubernetes-dashboard-arm:v1.8.3"
