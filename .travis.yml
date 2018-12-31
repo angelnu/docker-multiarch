@@ -8,31 +8,13 @@ language: bash
 env:
   matrix:
 
-  - TARGET="angelnu/metrics-server:v0.2.1"
-    SOURCE_amd64="gcr.io/google_containers/metrics-server-amd64:v0.2.1"
-    SOURCE_arm64="gcr.io/google_containers/metrics-server-arm64:v0.2.1"
-    SOURCE_arm="gcr.io/google_containers/metrics-server-arm:v0.2.1"
-
-  - TARGET="angelnu/nfs-client-provisioner:latest"
-    ARCHS="arm amd64"
-    SOURCE_amd64="quay.io/external_storage/nfs-client-provisioner:latest"
-    SOURCE_arm="quay.io/external_storage/nfs-client-provisioner-arm:latest"
-
+  # Dashboard
   - TARGET="angelnu/kubernetes-dashboard:v1.10.0"
     SOURCE_amd64="k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.0"
     SOURCE_arm64="k8s.gcr.io/kubernetes-dashboard-arm64:v1.10.0"
     SOURCE_arm="k8s.gcr.io/kubernetes-dashboard-arm:v1.10.0"
 
-  - TARGET="angelnu/pause:latest"
-    SOURCE_amd64="gcr.io/google_containers/pause-amd64:3.1"
-    SOURCE_arm64="gcr.io/google_containers/pause-arm64:3.1"
-    SOURCE_arm="gcr.io/google_containers/pause-arm:3.1"
-
-  - TARGET="angelnu/jackett:latest"
-    SOURCE_amd64="linuxserver/jackett:latest"
-    SOURCE_arm64="lsioarmhf/jackett-aarch64:latest"
-    SOURCE_arm="lsioarmhf/jackett:latest"
-
+  # Monitoring
   - TARGET="angelnu/heapster-grafana:v5.0.4"
     SOURCE_amd64="gcr.io/google_containers/heapster-grafana-amd64:v5.0.4"
     SOURCE_arm64="gcr.io/google_containers/heapster-grafana-arm64:v5.0.4"
@@ -48,25 +30,30 @@ env:
   #  SOURCE_arm64="gcr.io/google_containers/heapster-influxdb-arm64:v1.5.2"
   #  SOURCE_arm="gcr.io/google_containers/heapster-influxdb-arm:v1.5.2"
 
+
+
+
+  - TARGET="angelnu/nfs-client-provisioner:latest"
+    ARCHS="arm amd64"
+    SOURCE_amd64="quay.io/external_storage/nfs-client-provisioner:latest"
+    SOURCE_arm="quay.io/external_storage/nfs-client-provisioner-arm:latest"
+
   - TARGET="angelnu/openvpn-client:latest"
     SOURCE_amd64="dperson/openvpn-client:latest"
     SOURCE_arm64="dperson/openvpn-client:aarch64"
     SOURCE_arm="dperson/openvpn-client:armhf"
 
-  - TARGET="angelnu/etcd:3.1.17"
-    SOURCE_amd64="gcr.io/google_containers/etcd-amd64:3.1.17"
-    SOURCE_arm64="gcr.io/google_containers/etcd-arm64:3.1.17"
-    SOURCE_arm="gcr.io/google_containers/etcd-arm:3.1.17"
-
-  - TARGET="angelnu/kube-proxy:v1.11.1"
-    SOURCE_amd64="gcr.io/google_containers/kube-proxy-amd64:v1.11.1"
-    SOURCE_arm64="gcr.io/google_containers/kube-proxy-arm64:v1.11.1"
-    SOURCE_arm="gcr.io/google_containers/kube-proxy-arm:v1.11.1"
-
   - TARGET="angelnu/nextcloudplus:latest"
     ARCHS="arm amd64"
     SOURCE_amd64="ownyourbits/nextcloudpi-x86:latest"
     SOURCE_arm="ownyourbits/nextcloudpi-armhf:latest"
+
+
+  # TBD: linuxserver provides multiarch now
+  - TARGET="angelnu/jackett:latest"
+    SOURCE_amd64="linuxserver/jackett:latest"
+    SOURCE_arm64="lsioarmhf/jackett-aarch64:latest"
+    SOURCE_arm="lsioarmhf/jackett:latest"
 
   - TARGET="angelnu/transmission:latest"
     SOURCE_amd64="linuxserver/transmission:latest"
